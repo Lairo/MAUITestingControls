@@ -29,23 +29,17 @@
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-            <Entry Placeholder="Enter some text" 
-                   SemanticProperties.Hint="Let's you enter some text"/>
-
-            <Label Text="Here's what you typed:"
-                   SemanticProperties.Description="Here's what you typed:"/>
-
-            <Label x:Name="EnteredText"
-                   BackgroundColor="Gold" Margin="0,0,0,20"
-                   TextColor="Black"/>
+                HorizontalOptions="Center" /> 
 
             <Entry
                 Placeholder="Enter some text"
                 TextChanged="Entry_TextChanged"
                 />
 
+            <Label x:Name="EnteredText"
+                   BackgroundColor="Gold" Margin="0,0,0,20"
+                   TextColor="Black"/>
+            
             <Stepper Minimum="0" Maximum="10" Increment="1" 
                      ValueChanged="Stepper_ValueChanged"/>
 
